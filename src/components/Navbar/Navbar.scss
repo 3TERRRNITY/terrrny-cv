@@ -1,0 +1,62 @@
+$logo: "Nabla", cursive;
+
+.navbar {
+  background-color: transparent;
+  overflow: hidden;
+
+  position: absolute;
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  font-family: $logo;
+  font-size: 42px;
+
+  padding: 45px 20px;
+
+  a {
+    text-decoration: none;
+  }
+}
+
+.navbar__list {
+  display: flex;
+  justify-content: space-around;
+  font-family: $logo;
+
+  font-size: 26px;
+
+  padding: 40px;
+
+  .navbar__item {
+    margin: 10px;
+    text-decoration: none;
+    list-style: none;
+
+    a:link {
+      color: rgb(255, 174, 0);
+      text-decoration: none;
+    }
+    a:visited {
+      color: rgb(255, 174, 0);
+    }
+    a:active {
+      color: rgb(246, 193, 79);
+    }
+    p:hover {
+      animation: bounce 1s ease infinite;
+    }
+  }
+
+  @keyframes bounce {
+    100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: rotate(-35deg) translateX(-30px);
+    }
+  }
+}

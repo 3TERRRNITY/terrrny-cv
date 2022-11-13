@@ -1,0 +1,51 @@
+.navbar {
+  background-color: transparent;
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  font-family: "Nabla", cursive;
+  font-size: 42px;
+  padding: 45px 20px;
+}
+.logo a {
+  text-decoration: none;
+}
+
+.navbar__list {
+  display: flex;
+  justify-content: space-around;
+  font-family: "Nabla", cursive;
+  font-size: 26px;
+  padding: 40px;
+}
+.navbar__list .navbar__item {
+  margin: 10px;
+  text-decoration: none;
+  list-style: none;
+}
+.navbar__list .navbar__item a:link {
+  color: #ffae00;
+  text-decoration: none;
+}
+.navbar__list .navbar__item a:visited {
+  color: #ffae00;
+}
+.navbar__list .navbar__item a:active {
+  color: #f6c14f;
+}
+.navbar__list .navbar__item p:hover {
+  animation: bounce 1s ease infinite;
+}
+@keyframes bounce {
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: rotate(-35deg) translateX(-30px);
+  }
+}
